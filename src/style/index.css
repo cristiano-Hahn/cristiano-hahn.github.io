@@ -1,0 +1,64 @@
+@font-face {
+    font-family: baloo;
+    src: url(../fonts/Baloo-Regular.ttf);
+}
+  
+body {
+    font-family: baloo;
+    background-color: #2D2D2D;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #505050;
+    padding: 20px 0px;
+}
+
+.menu-name {
+    color: #00B7AC;
+    width: 25%;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+
+.menu-item {
+    color: #EAEAEA;
+    font-size: 22px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    color: #00B7AC;
+    transition: 0.5s;
+}
+
+@media(max-width: 768px){
+    .menu{
+       flex-direction: column;
+       padding: 5px 0px;
+    }
+    .menu-name {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .menu-items {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-item{
+        margin: 3px 0px;
+    }
+    
+}
