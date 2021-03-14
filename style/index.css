@@ -65,9 +65,6 @@ body {
     text-align: justify;
 }
 
-
-
-
 @media(max-width: 768px){
     .menu{
        flex-direction: column;
