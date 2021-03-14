@@ -55,12 +55,61 @@ body {
     max-width: 300px;
     min-width: 200px;
     border-radius: 1000px;
-    border: 5px solid #00B7AC;
 }
 
-.init .description{
+.init .description {
     padding: 50px;
     max-width: 700px;
+    line-height: normal;
+    text-align: justify;
+}
+
+.experience-title {
+    margin: 50px 0px;
+    color: #00B7AC;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.experience-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.experience-item-divisor {
+    display: flex;
+    height: 100px;
+}
+
+.experience-item-divisor hr {
+    border: 2px solid #00B7AC;
+    border-radius: 2px;
+}
+
+
+.experience-item .year {
+    margin: 10px 20px;
+    font-size: 35px;
+}
+
+.experience-item .image img {
+    margin: 10px 20px;
+    width: 150px;
+    border-radius: 1000px;
+}
+
+.experience-item .description {
+    margin: 10px 20px;
     line-height: normal;
     text-align: justify;
 }
@@ -95,6 +144,18 @@ body {
     
     .init .description{
         padding: 20px;
+    }
+
+    .experience-title {
+        margin: 0px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+    }
+
+    .experience-item-divisor {
+        height: 50px;
     }
     
 }
