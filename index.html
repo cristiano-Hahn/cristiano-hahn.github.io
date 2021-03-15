@@ -8,6 +8,12 @@
     <title>Cristiano Hahn</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/index.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_OYJ3hH3l8rFL4NWOrgTD4");
+        })();
+    </script>
 </head>
 
 <body>
@@ -16,9 +22,15 @@
             <div>Cristiano Hahn</div>
         </div>
         <div class="menu-items">
-            <div class="menu-item">Início</div>
-            <div class="menu-item">Experiência</div>
-            <div class="menu-item">Contato</div>
+            <a href="#contact">
+                <div class="menu-item">Início</div>
+            </a>
+            <a href="#experience">
+                <div class="menu-item">Experiência</div>
+            </a>
+            <a href="#contact">
+                <div class="menu-item">Contato</div>
+            </a>
         </div>
     </div>
     <div class="init">
@@ -27,13 +39,13 @@
         </div>
         <div class="description">
             Possui experiência com desenvolvimento Desktop, Web e Mobile, atualmente trabalha como Backend Software
-            Engineer na empresa iFood. Demonstra sólidos conhecimentos nas linguagens Java, Kotlin e Javascript,
-            utilizando de frameworks como Spring e ReactJs, além de inúmeras bibliotecas presentes nestes ecossistemas,
-            participando também de projetos arquiteturais e conhecendo a fundo a estrutura e serviços da Amazon Web
-            Services.
+            Engineer na empresa iFood desenvolvendo Rest APIs. Demonstra sólidos
+            conhecimentos nas linguagens Java, Kotlin e Javascript e na arquitetura AWS, utilizando de frameworks como
+            Spring boot e ReactJs, além de inúmeras bibliotecas presentes nestes ecossistemas, participando também de
+            projetos arquiteturais e conhecendo a fundo a estrutura e serviços da Amazon Web Services.
         </div>
     </div>
-    <div class="experience">
+    <div id="experience" class="experience">
         <div class="experience-title-container">
             <div class="experience-title">
                 Experiência
@@ -57,14 +69,12 @@
                         01/2021 - Emprego atual
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed venenatis nulla.
-                        Curabitur
-                        interdum eu libero vitae blandit. In in scelerisque nulla. Curabitur dignissim, nisi eget
-                        sagittis
-                        vestibulum, turpis nulla hendrerit purus, lobortis pulvinar sapien nunc et ex. Suspendisse et
-                        dictum
-                        lorem,
-                        sit amet pharetra nunc. Etiam viverra sit amet erat at convallis.
+                        Atua com o desenvolvimento de Rest APIs com as linguagens de programação Java e Kotlin, bancos
+                        de dados PostgreSQL e gerenciamento de filas com Kafka e SQS/SNS em um ambiente totalmente
+                        distribuído visando resiliência e alta disponibilidade na Amazon Web Services. Para o
+                        desenvolvimento das aplicações, são utilizadas principalmente a arquitetura hexagonal unida com
+                        Domain Driven Design. Algumas das principais frameworks, bibliotecas e ferramentas utilizadas
+                        são Spring Boot, Ktor, JUnit, Kotest, Kubernetes, Databricks, Grafana dentre outros.
                     </div>
                 </div>
             </div>
@@ -130,33 +140,36 @@
 
         </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact-title-container">
             <div class="contact-title">
                 Contato
             </div>
             <div class="contact-description">
-                Entre em contato comigo para saber mais :)
+                Preencha os campos e entre em contato comigo :)
             </div>
         </div>
         <div class="form">
             <div class="form-item">
                 <div class="label">Nome</div>
-                <input class="textfield" type="text" />
+                <input id="input-name" class="textfield" type="text" />
             </div>
             <div class="form-item">
                 <div class="label">Email</div>
-                <input class="textfield" type="text" />
+                <input id="input-email" class="textfield" type="text" />
             </div>
             <div class="form-item">
                 <div class="label">Mensagem</div>
-                <textarea class="textfield" type="text"></textarea>
+                <textarea id="input-message" class="textfield" type="text"></textarea>
+                * Preencha todos os campos para entrar em contato
             </div>
             <div class="send-button">
-                <button>Entrar em contato</button>
+                <button disabled id="send-button">Entrar em contato</button>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript" src="scripts/send-mail.js">
+</script>
 
 </html>

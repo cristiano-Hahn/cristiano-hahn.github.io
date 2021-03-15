@@ -19,6 +19,7 @@ body {
 
 a {
     color: #EAEAEA;
+    text-decoration: none;
 }
 
 input, select, textarea, button{font-family:inherit;}
@@ -218,7 +219,7 @@ input, select, textarea, button{font-family:inherit;}
 }
 
 .contact .send-button button {
-    width: 250px;
+    width: 320px;
     height: 45px;
     border: none;
     border-radius: 3px;
@@ -229,6 +230,11 @@ input, select, textarea, button{font-family:inherit;}
     cursor: pointer;
     padding-top: 5px;
     font-weight: bold;
+}
+
+.contact .send-button button:disabled {
+    background-color: #67928f;
+    cursor: default;
 }
 
 @media(max-width: 768px){
