@@ -1,10 +1,10 @@
 @font-face {
-    font-family: baloo;
+    font-family: main-font;
     src: url(../fonts/Baloo-Regular.ttf);
 }
   
 body {
-    font-family: baloo;
+    font-family: main-font;
     background-color: #2D2D2D;
     color: #EAEAEA;
 }
@@ -112,6 +112,70 @@ body {
     margin: 10px 20px;
     line-height: normal;
     text-align: justify;
+}
+
+.contact-title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #00B7AC;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact .form-item {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact .form-item .textfield {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 3px;
+    background-color: #505050;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #EAEAEA;
+}
+
+.contact .form-item input {
+    height: 35px;
+}
+
+.contact .form-item textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact .send-button {
+    margin-top: 20px;
+}
+
+.contact .send-button button {
+    width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: #00B7AC;
+    color: #EAEAEA;
+    font-family: main-font;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 @media(max-width: 768px){
