@@ -28,7 +28,6 @@ input, select, textarea, button{font-family:inherit;}
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #505050;
     padding: 10px 0px;
     line-height: 1;
 }
