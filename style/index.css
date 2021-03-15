@@ -1,28 +1,42 @@
 @font-face {
     font-family: main-font;
-    src: url(../fonts/Baloo-Regular.ttf);
+    src: url(../fonts/BalooTammudu2-Regular.ttf);
 }
   
+@font-face {
+    font-family: main-font;
+    src: url(../fonts/BalooTammudu2-Bold.ttf);
+    font-weight: bold;
+}
+  
+
 body {
     font-family: main-font;
     background-color: #2D2D2D;
     color: #EAEAEA;
+    
+    line-height: 1.7;
 }
+
+input, select, textarea, button{font-family:inherit;}
 
 .menu{
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #505050;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    line-height: 1;
 }
 
 .menu-name {
     color: #00B7AC;
     width: 25%;
     font-size: 28px;
+    font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 10px;
 }
 
 .menu-items {
@@ -33,6 +47,7 @@ body {
 }
 
 .menu-item {
+    padding-top: 10px;
     font-size: 22px;
 }
 
@@ -60,16 +75,24 @@ body {
 .init .description {
     padding: 50px;
     max-width: 700px;
-    line-height: normal;
     text-align: justify;
 }
 
+.experience-title-container {
+    display: flex;
+    justify-content: center;
+}
+
 .experience-title {
-    margin: 50px 0px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
     color: #00B7AC;
     font-size: 35px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 1000px;
+    max-width: 90%;
 }
 
 .experience-items {
@@ -100,6 +123,7 @@ body {
 .experience-item .year {
     margin: 10px 20px;
     font-size: 35px;
+    font-weight: bold;
 }
 
 .experience-item .image img {
@@ -109,52 +133,67 @@ body {
 }
 
 .experience-item .description {
-    margin: 10px 20px;
-    line-height: normal;
+    margin: 10px 30px;
     text-align: justify;
 }
 
+.contact-title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-title {
+    font-weight: bold;
     margin-top: 50px;
-    margin-bottom: 10px;
     color: #00B7AC;
     font-size: 35px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 1000px;
+    max-width: 90%;
 }
 
 .contact-description {
     padding-left: 20px;
     padding-right: 20px;
+    width: 1000px;
+    max-width: 90%;
 }
 
 .contact .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .contact .form-item {
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+.contact .form-item .label {
+    font-weight: bold;
+}
+
 .contact .form-item .textfield {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 3px;
     background-color: #505050;
     outline: none;
     border: none;
-    font-size: 16px;
-    color: #EAEAEA;
+    font-size: 18px;
+    color: #EAEAEA; 
+    padding-top: 10px;
 }
 
 .contact .form-item input {
-    height: 35px;
+    height: 30px;
+    font-family: main-font;
 }
 
 .contact .form-item textarea {
@@ -176,6 +215,8 @@ body {
     font-family: main-font;
     font-size: 20px;
     cursor: pointer;
+    padding-top: 5px;
+    font-weight: bold;
 }
 
 @media(max-width: 768px){
@@ -188,6 +229,7 @@ body {
         text-align: center;
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 5px;
     }
     .menu-items {
         flex-direction: column;
@@ -195,6 +237,7 @@ body {
     }
     .menu-item{
         margin: 3px 0px;
+        padding-top: 0px;
     }
 
     .init {
