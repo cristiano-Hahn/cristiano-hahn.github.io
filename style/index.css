@@ -137,6 +137,11 @@ input, select, textarea, button{font-family:inherit;}
     text-align: justify;
 }
 
+.experience-item .description .job-description {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .contact-title-container {
     display: flex;
     align-items: center;
