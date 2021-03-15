@@ -14,8 +14,11 @@ body {
     font-family: main-font;
     background-color: #2D2D2D;
     color: #EAEAEA;
-    
     line-height: 1.7;
+}
+
+a {
+    color: #EAEAEA;
 }
 
 input, select, textarea, button{font-family:inherit;}
@@ -140,6 +143,10 @@ input, select, textarea, button{font-family:inherit;}
 .experience-item .description .job-description {
     font-weight: bold;
     font-size: 18px;
+}
+
+.experience-item .description .job-period {
+    color: #888888;
 }
 
 .contact-title-container {
