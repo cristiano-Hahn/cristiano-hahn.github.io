@@ -149,6 +149,73 @@ input, select, textarea, button{font-family:inherit;}
     color: #888888;
 }
 
+.habilities-title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilities-title {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #00B7AC;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1000px;
+    max-width: 90%;
+}
+
+.habilities .cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.habilities .cards {
+    display: grid;
+    justify-content: center;
+    max-width: 1200px;
+    grid-gap: 4rem;
+}
+
+.habilities .card{
+    background-color: #101010;
+    min-height: 250px;
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.habilities .card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.habilities .card .title{
+    font-size: 26px;
+    font-weight: bold;
+ }
+
+ .habilities .card .image img{
+    width:35px ;
+    border-radius: 40px;
+ }
+
+ .habilities .card .experience {
+    color: #00B7AC;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+ 
+ .habilities .card .explanation {
+    text-align: justify;
+ }
+
+
 .contact-title-container {
     display: flex;
     align-items: center;
@@ -283,3 +350,11 @@ input, select, textarea, button{font-family:inherit;}
     }
     
 }
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
