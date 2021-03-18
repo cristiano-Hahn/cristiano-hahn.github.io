@@ -281,7 +281,7 @@ input, select, textarea, button{font-family:inherit;}
 
 .contact .send-button {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .contact .send-button button {
