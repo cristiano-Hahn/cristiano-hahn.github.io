@@ -299,7 +299,7 @@ input, select, textarea, button{font-family:inherit;}
 }
 
 .contact .send-button button:disabled {
-    background-color: #67928f;
+    background-color: #909090;
     cursor: default;
 }
 
