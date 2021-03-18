@@ -206,8 +206,7 @@ input, select, textarea, button{font-family:inherit;}
  .habilities .card .experience {
     color: #00B7AC;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 17px;
  }
 
  
@@ -282,6 +281,7 @@ input, select, textarea, button{font-family:inherit;}
 
 .contact .send-button {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact .send-button button {

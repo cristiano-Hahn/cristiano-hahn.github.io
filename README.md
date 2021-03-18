@@ -1,2 +1,3 @@
 # cristiano-hahn.github.io
-My personal site
+
+It's my personal site created simply with HTML, CSS and Javascript :)
